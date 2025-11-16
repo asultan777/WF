@@ -26,5 +26,5 @@ jobs:
           API_TOKEN: ${{ secrets.MY_SECRET }}
         run: |
           # اختبار اتصال بخدمة خارجية بدون طباعة السر
-          response=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $API_TOKEN" https://api.example.com/health)
+          response=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $API_TOKEN" https://www.google.com/health)
           echo "API responded with code $response"
